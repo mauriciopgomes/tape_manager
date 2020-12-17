@@ -21,7 +21,7 @@ class CreateTapesTable extends Migration
             $table->foreign('tape_type_id')->references('id')->on('tape_types');
             $table->integer('tape_status_id');
             $table->foreign('tape_status_id')->references('id')->on('tape_statuses');
-            $table->text('obs');
+            $table->text('obs')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -16,6 +16,7 @@ class CreateTapeStatusesTable extends Migration
         Schema::create('tape_statuses', function (Blueprint $table) {
             $table->id();
             $table->string("status");
+            $table->softDeletes();
             $table->timestamps();
         });
     }

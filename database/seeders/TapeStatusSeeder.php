@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use DB;
+use Carbon\Carbon;
 
 class TapeStatusSeeder extends Seeder
 {
@@ -14,11 +15,28 @@ class TapeStatusSeeder extends Seeder
      */
     public function run()
     {
+        $now = Carbon::now();
         DB::table('tape_statuses')->insert([
-            ['status' => "Available"],
-            ['status' => "In Use"],
-            ['status' => "Broken"],
-            ['status' => "Reserved"]
+            [
+                'status' => "Available",
+                'created_at' => $now,
+                'updated_at' => $now
+            ],
+            [
+                'status' => "In Use",
+                'created_at' => $now,
+                'updated_at' => $now
+            ],
+            [
+                'status' => "Broken",
+                'created_at' => $now,
+                'updated_at' => $now
+            ],
+            [
+                'status' => "Reserved",
+                'created_at' => $now,
+                'updated_at' => $now
+            ]
         ]);
     }
 }

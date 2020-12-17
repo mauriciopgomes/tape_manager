@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class TapeType extends Model
 {
     use SoftDeletes;
+    protected $fillable = [
+        'type'
+    ];
 }
