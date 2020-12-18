@@ -1,4 +1,4 @@
-[![StyleCI](https://github.styleci.io/repos/322392784/shield?branch=main)]
+![StyleCI](https://github.styleci.io/repos/322392784/shield?branch=main)
 
 
 test
