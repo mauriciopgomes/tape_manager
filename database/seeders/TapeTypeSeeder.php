@@ -61,12 +61,12 @@ class TapeTypeSeeder extends Seeder
                 'type'       => 'LTO-9',
                 'created_at' => $now,
                 'updated_at' => $now,
-            ],            
+            ],
             [
                 'type'       => 'LTO-10',
                 'created_at' => $now,
                 'updated_at' => $now,
-            ]
+            ],
         ]);
     }
 }

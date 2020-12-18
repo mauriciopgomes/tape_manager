@@ -36,7 +36,7 @@ class TapeStatusSeeder extends Seeder
                 'status'     => 'Reserved',
                 'created_at' => $now,
                 'updated_at' => $now,
-            ]
+            ],
         ]);
     }
 }
