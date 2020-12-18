@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 use DB;
+use Illuminate\Database\Seeder;
 
 class TapeTypeSeeder extends Seeder
 {
@@ -14,58 +15,58 @@ class TapeTypeSeeder extends Seeder
      */
     public function run()
     {
-        $now = date("Y-m-d H:i:s");
+        $now = Carbon::now();
         DB::table('tape_types')->insert([
             [
-                'type' => "LTO-1",
+                'type' => 'LTO-1',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-2",
+                'type' => 'LTO-2',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-3",
+                'type' => 'LTO-3',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-4",
+                'type' => 'LTO-4',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-5",
+                'type' => 'LTO-5',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-6",
+                'type' => 'LTO-6',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-7",
+                'type' => 'LTO-7',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-8",
+                'type' => 'LTO-8',
                 'created_at' => $now,
                 'updated_at' => $now
             ],
             [
-                'type' => "LTO-9",
+                'type' => 'LTO-9',
                 'created_at' => $now,
                 'updated_at' => $now
             ],            
             [
-                'type' => "LTO-10",
+                'type' => 'LTO-10',
                 'created_at' => $now,
                 'updated_at' => $now
-            ]
+                ]
         ]);
     }
 }

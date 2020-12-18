@@ -9,6 +9,6 @@ class TapeType extends Model
 {
     use SoftDeletes;
     protected $fillable = [
-        'type'
+        'type',
     ];
 }

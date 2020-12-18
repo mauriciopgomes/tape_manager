@@ -35,6 +35,7 @@ class TapeController extends Controller
     public function delete($id)
     {
         Tape::findOrFail($id)->delete();
+        
         return response('Deleted Successfully', 200);
     }
 }

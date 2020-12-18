@@ -1,7 +1,5 @@
 <?php
 
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
 use App\Models\TapeType;
 
 class TapeTypesTest extends TestCase
@@ -14,7 +12,7 @@ class TapeTypesTest extends TestCase
 
     public function testTapeTypesDB()
     {
-    $this->seeInDatabase('tape_types', ['type' => 'LTO-1']);
+        $this->seeInDatabase('tape_types', ['type' => 'LTO-1']);
     }
 
     public function testTapeTypesCreate()

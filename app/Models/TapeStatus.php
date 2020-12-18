@@ -9,6 +9,6 @@ class TapeStatus extends Model
 {
     use SoftDeletes;
     protected $fillable = [
-        'status'
+        'status',
     ];
 }

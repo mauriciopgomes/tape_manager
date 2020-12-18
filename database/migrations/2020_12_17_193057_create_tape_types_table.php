@@ -15,7 +15,7 @@ class CreateTapeTypesTable extends Migration
     {
         Schema::create('tape_types', function (Blueprint $table) {
             $table->id();
-            $table->string("type");
+            $table->string('type');
             $table->softDeletes();
             $table->timestamps();
         });

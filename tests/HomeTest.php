@@ -1,7 +1,5 @@
 <?php
 
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
 use App\Models\Tape;
 
 class HomeTest extends TestCase
@@ -11,7 +9,8 @@ class HomeTest extends TestCase
         $this->get('/');
 
         $this->assertEquals(
-            "Tape Manager", $this->response->getContent()
+            "Tape Manager",
+            $this->response->getContent()
         );
     }
 
@@ -25,11 +24,11 @@ class HomeTest extends TestCase
     {
         global $lastId;
         $this->json('POST', '/api/v1/tapes', [
-            'name_inside' => 'Test',
-            'name_outside' => 'Test',
-            'tape_type_id' => 1,
+            'name_inside'   => 'Test',
+            'name_outside'  => 'Test',
+            'tape_type_id'  => 1,
             'tape_status_id'=> 1
-            ])
+        ])
             ->seeJson([
                 'name_inside' => 'Test',
             ]);

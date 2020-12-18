@@ -35,6 +35,7 @@ class TapeTypeController extends Controller
     public function delete($id)
     {
         TapeType::findOrFail($id)->delete();
+        
         return response('Deleted Successfully', 200);
     }
 }

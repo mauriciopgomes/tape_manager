@@ -9,6 +9,6 @@ class Tape extends Model
 {
     use SoftDeletes;
     protected $fillable = [
-        'name_inside', 'name_outside', 'tape_type_id', 'tape_status_id', 'obs'
+        'name_inside', 'name_outside', 'tape_type_id', 'tape_status_id', 'obs',
     ];
 }

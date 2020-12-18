@@ -1,7 +1,5 @@
 <?php
 
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
 use App\Models\TapeStatus;
 
 class TapeStatusTest extends TestCase
@@ -14,7 +12,7 @@ class TapeStatusTest extends TestCase
 
     public function testTapeStatusDB()
     {
-    $this->seeInDatabase('tape_statuses', ['status' => 'Available']);
+        $this->seeInDatabase('tape_statuses', ['status' => 'Available']);
     }
 
     public function testTapeStatusCreate()
