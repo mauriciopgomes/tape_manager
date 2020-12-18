@@ -1,0 +1,4 @@
+/vendor
+/deployment
+.phpunit.result.cache
+README.md

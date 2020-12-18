@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tape-manager
+spec:
+  selector:
+    app: tape-manager
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+  type: NodePort

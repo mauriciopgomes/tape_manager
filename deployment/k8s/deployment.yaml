@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tape-manager
+  labels:
+    app: tape-manager
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tape-manager
+  template:
+    metadata:
+      labels:
+        app: tape-manager
+    spec:
+      containers:
+      - name: tape-manager
+        image: mauriciopgomes/tape-manager:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+
