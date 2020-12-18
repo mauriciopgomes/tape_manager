@@ -9,7 +9,7 @@ class HomeTest extends TestCase
         $this->get('/');
 
         $this->assertEquals(
-            "Tape Manager",
+            'Tape Manager',
             $this->response->getContent()
         );
     }
@@ -27,7 +27,7 @@ class HomeTest extends TestCase
             'name_inside'   => 'Test',
             'name_outside'  => 'Test',
             'tape_type_id'  => 1,
-            'tape_status_id'=> 1
+            'tape_status_id'=> 1,
         ])
             ->seeJson([
                 'name_inside' => 'Test',
