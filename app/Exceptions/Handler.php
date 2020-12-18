@@ -31,7 +31,7 @@ class Handler extends ExceptionHandler
      * @param \Throwable $exception
      *
      * @throws \Exception
-     * 
+     *
      * @return void
      */
     public function report(Throwable $exception)
@@ -46,7 +46,7 @@ class Handler extends ExceptionHandler
      * @param \Throwable               $exception
      *
      * @throws \Throwable
-     * 
+     *
      * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function render($request, Throwable $exception)
