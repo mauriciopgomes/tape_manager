@@ -4,7 +4,7 @@ use Laravel\Lumen\Testing\DatabaseMigrations;
 use Laravel\Lumen\Testing\DatabaseTransactions;
 use App\Models\TapeType;
 
-class TapesTypesTest extends TestCase
+class TapeTypesTest extends TestCase
 {
     public function testTapeTypesHome()
     {

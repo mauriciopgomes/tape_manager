@@ -4,7 +4,7 @@ use Laravel\Lumen\Testing\DatabaseMigrations;
 use Laravel\Lumen\Testing\DatabaseTransactions;
 use App\Models\TapeStatus;
 
-class TapesStatusTest extends TestCase
+class TapeStatusTest extends TestCase
 {
     public function testTapeStatusHome()
     {
