@@ -22,7 +22,11 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
-        resources: {}
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
       dnsPolicy: ClusterFirst
       restartPolicy: Always
 
