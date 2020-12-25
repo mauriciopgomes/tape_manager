@@ -6,10 +6,10 @@ metadata:
   labels:
     app: tape-manager
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: tape-manager
-    replicas: 1
   template:
     metadata:
       labels:
