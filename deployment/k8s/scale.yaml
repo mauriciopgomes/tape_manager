@@ -10,4 +10,4 @@ spec:
     name: tape-manager
   minReplicas: 1
   maxReplicas: 20
-  targetCPUUtilizationPercentage: 50
+  targetCPUUtilizationPercentage: 10
