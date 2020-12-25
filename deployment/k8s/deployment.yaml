@@ -9,6 +9,7 @@ spec:
   selector:
     matchLabels:
       app: tape-manager
+    replicas: 1
   template:
     metadata:
       labels:
