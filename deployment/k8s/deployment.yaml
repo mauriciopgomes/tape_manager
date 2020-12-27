@@ -6,7 +6,12 @@ metadata:
   labels:
     app: tape-manager
 spec:
-  replicas: 1
+  replicas: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 10
+      maxUnavailable: 0
   selector:
     matchLabels:
       app: tape-manager
@@ -22,6 +27,16 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        startupProbe:
+          httpGet:
+            path: /health
+            port: 80
         resources:
           limits:
             cpu: 500m
