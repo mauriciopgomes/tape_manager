@@ -22,20 +22,20 @@ spec:
     spec:
       containers:
       - name: tape-manager
-        image: mauriciopgomes/tape-manager:latest
+        image: nginx
         imagePullPolicy: Always
         ports:
         - containerPort: 80
           protocol: TCP
         livenessProbe:
           httpGet:
-            path: /health
+            path: /
             port: 80
           initialDelaySeconds: 5
           periodSeconds: 5
         startupProbe:
           httpGet:
-            path: /health
+            path: /
             port: 80
         resources:
           limits:
