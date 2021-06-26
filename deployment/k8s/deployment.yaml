@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tape-manager
-  namespace: tape-manager
   labels:
     app: tape-manager
 spec:

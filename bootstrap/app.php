@@ -26,6 +26,7 @@ $app = new Laravel\Lumen\Application(
 $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 
 $app->register(\UKFast\HealthCheck\HealthCheckServiceProvider::class);
+$app->configure('healthcheck');
 
 $app->withFacades();
 
